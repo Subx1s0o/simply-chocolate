@@ -59,6 +59,12 @@ main {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
 }
 
 li {
@@ -87,6 +93,11 @@ li {
 nav {
   display: flex;
   gap: 48px;
+}
+
+.burger_btn {
+  background-color: transparent;
+  border: none;
 }
 
 .nav-ul {
