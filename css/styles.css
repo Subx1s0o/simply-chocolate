@@ -36,6 +36,9 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
 }
 
 ul,
@@ -129,16 +132,20 @@ nav {
   stroke: #111;
 }
 
-.logotype a {
-  display: flex;
-  gap: 4px;
+.logotype-p {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  align-items: center;
   line-height: 129%;
   letter-spacing: -0.03em;
   color: #111;
+}
+
+.logotype a {
+  display: flex;
+  gap: 4px;
+
+  align-items: center;
 }
 
 .logotype span {
@@ -486,3 +493,132 @@ nav {
 
 /* 
 ------------------------------------END SECOND SECTION------------------------------- */
+
+/* 
+----------------------------THIRD SECTION------------------------------- */
+
+.taste_container {
+  padding: 80px 20px;
+}
+
+.taste_container h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 27px;
+}
+.taste_container span {
+  color: #fd9222;
+}
+
+.taste-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.taste-li {
+  position: relative;
+  display: flex;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-top: 32px;
+  padding-right: 49px;
+  border-radius: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.taste-img {
+  margin: auto;
+  padding-left: 22px;
+}
+
+.taste-li-h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.taste-li:nth-child(1) {
+  background-color: #fd9222;
+}
+
+.description {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.description button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px 8px;
+}
+
+.arrow-svg {
+  stroke: #fff;
+}
+
+.taste-li:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #fd9222;
+}
+
+.taste-li:nth-child(2) .taste-li-h3 {
+  color: #111;
+}
+
+.taste-li:nth-child(2) .description button {
+  border-color: #fd9222;
+}
+.orange-svg {
+  fill: transparent;
+  stroke: #fd9222;
+}
+
+.taste-li:nth-child(3) {
+  background-color: #1e1823;
+}
+
+.taste-li:nth-child(4) {
+  background-color: transparent;
+  border: 1px solid #fd9222;
+}
+
+.taste-li:nth-child(4) .taste-li-h3 {
+  color: #111;
+}
+
+.taste-li:nth-child(4) .description button {
+  border-color: #fd9222;
+}
+
+.taste-li:nth-child(5) {
+  background-color: #fd9222;
+}
+
+.taste-li:nth-child(6) {
+  background-color: transparent;
+  border: 1px solid #fd9222;
+}
+
+.taste-li:nth-child(6) .taste-li-h3 {
+  color: #111;
+}
+
+.taste-li:nth-child(6) .description button {
+  border-color: #fd9222;
+}
+
+/* ------------------------------------------END SECTION--------------------------------- */
