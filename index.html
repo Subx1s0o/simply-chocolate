@@ -33,7 +33,11 @@
         <nav>
           <ul class="nav-ul">
             <li class="nav-li"><a href="">Home</a></li>
-            <li class="nav-li"><a href="">How it’s made?</a></li>
+            <li class="nav-li">
+              <a href="#made" onclick="scrollToSection(event,'#made')"
+                >How it’s made?</a
+              >
+            </li>
             <li class="nav-li"><a href="">Chocolate is loved</a></li>
           </ul>
           <div class="soc-icons">
@@ -70,7 +74,12 @@
             <div class="btns-hero">
               <div class="btns_btns">
                 <button class="buy-btn">Buy now</button
-                ><button class="about-btn">How it’s made</button>
+                ><button
+                  onclick="scrollToSection(event,'#made')"
+                  class="about-btn"
+                >
+                  How it’s made
+                </button>
               </div>
               <div class="btn-scroll-tab">
                 <p>scroll down</p>
@@ -293,7 +302,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="made">
         <div class="container about_container">
           <h2>hOW IT’S <span>made?</span></h2>
           <div class="about-content">
@@ -328,5 +337,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
