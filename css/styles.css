@@ -1018,6 +1018,7 @@ nav {
   padding: 42px 18px;
   margin-bottom: 32px;
   border-radius: 15px;
+  max-width: 360px;
 }
 
 .review-ul li h3 {
