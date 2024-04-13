@@ -668,7 +668,6 @@ nav {
 }
 
 .about_container {
-  padding-bottom: 80px;
   padding-right: 20px;
   padding-left: 20px;
   display: flex;
@@ -808,3 +807,122 @@ nav {
   }
 }
 /* ------------------------------------------End FOURTH SECTION-------------------------------- */
+/* 
+---------------------------FIFTH SECTION------------------ */
+.products_container h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #111;
+}
+
+.products_container span {
+  color: #fd9222;
+}
+
+.products_container {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 32px 53px;
+  background: #fff;
+}
+
+.products-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.products-h {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+.products-p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  margin-bottom: 18px;
+}
+
+.products-ul li button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  background: #fafafa;
+}
+
+@media (min-width: 600px) {
+  .products_container {
+    padding-top: 100px;
+  }
+
+  .products-ul {
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products-ul li {
+    flex-basis: calc((100% - 20px) / 2);
+    max-width: 335px;
+  }
+  .products-h {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 991px) {
+  .products_container {
+    padding-top: 120px;
+  }
+  .products-ul {
+    gap: 18px;
+    row-gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .products-ul li {
+    flex-basis: calc((100% - 54px) / 4);
+    padding: 32px 0px;
+  }
+}
