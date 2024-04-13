@@ -172,6 +172,11 @@ nav {
   .logotype a {
     font-size: 16px;
   }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 @media (min-width: 991px) {
@@ -445,7 +450,8 @@ nav {
 
 @media (min-width: 768px) {
   .features_container {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .features-ul {
@@ -462,6 +468,11 @@ nav {
 }
 
 @media (min-width: 991px) {
+  .features_container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .features-ul {
     flex-wrap: nowrap;
     gap: 88px;
@@ -498,7 +509,8 @@ nav {
 ----------------------------THIRD SECTION------------------------------- */
 
 .taste_container {
-  padding: 80px 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .taste_container h2 {
@@ -668,8 +680,6 @@ nav {
 }
 
 .about_container {
-  padding-right: 20px;
-  padding-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
