@@ -81,6 +81,20 @@ li {
   margin-right: auto;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+span {
+  color: #fd9222;
+}
+
 /* -----------------------------END MAIN------------------------------ */
 
 /* -------------------------HEADER----------------------------- */
@@ -514,17 +528,7 @@ nav {
 }
 
 .taste_container h2 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 120%;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
   margin-bottom: 27px;
-}
-.taste_container span {
-  color: #fd9222;
 }
 
 .taste-ul {
@@ -686,20 +690,7 @@ nav {
 }
 
 .about_container h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 117%;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 32px;
-  color: #111;
-}
-
-.about_container span {
-  color: #fd9222;
 }
 
 .about_back {
@@ -794,6 +785,11 @@ nav {
 
     margin-bottom: 28px;
   }
+
+  .about_container h2 {
+    margin-bottom: 50px;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -820,20 +816,7 @@ nav {
 /* 
 ---------------------------FIFTH SECTION------------------ */
 .products_container h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 117%;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
   margin-bottom: 32px;
-  color: #111;
-}
-
-.products_container span {
-  color: #fd9222;
 }
 
 .products_container {
@@ -860,6 +843,7 @@ nav {
   border-radius: 15px;
   padding: 32px 53px;
   background: #fff;
+  max-width: 335px;
 }
 
 .products-img {
@@ -936,3 +920,70 @@ nav {
     padding: 32px 0px;
   }
 }
+
+/* 
+---------------------END FIFTH SECTION-------------------------------- */
+
+/* --------------------------SIXTH SECTION------------------------- */
+
+.sellers_container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.sellers_container h2 {
+  margin-bottom: 32px;
+}
+
+.sellers-ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.sellers-ul li {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.sellers-ul li h3 {
+  padding: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.sellers-ul li:nth-child(2),
+.sellers-ul li:nth-child(3) {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .sellers-ul {
+    flex-direction: row;
+  }
+  .sellers-ul li:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sellers_container h2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 991px) {
+  .sellers-ul li:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* -------------------------- END SIXTH SECTION------------------------- */
