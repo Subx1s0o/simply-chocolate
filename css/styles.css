@@ -95,6 +95,10 @@ span {
   color: #fd9222;
 }
 
+.logo-span {
+  color: #111;
+}
+
 /* -----------------------------END MAIN------------------------------ */
 
 /* -------------------------HEADER----------------------------- */
@@ -987,3 +991,107 @@ nav {
 }
 
 /* -------------------------- END SIXTH SECTION------------------------- */
+
+/* -------------------------------SEVENTH SECTION------------------------- */
+
+.review_container {
+  padding-bottom: 80px;
+}
+
+.review_container h2 {
+  margin-bottom: 74px;
+}
+
+.review-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.review-ul li {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  padding: 42px 18px;
+  margin-bottom: 32px;
+  border-radius: 15px;
+}
+
+.review-ul li h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+  margin-top: 18px;
+}
+
+.review-ul li p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-ul li img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.review-ul li:nth-child(2),
+.review-ul li:nth-child(3) {
+  display: none;
+}
+
+.review-btn {
+  display: block;
+  margin: auto;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+@media (min-width: 600px) {
+  .review-ul {
+    flex-direction: row;
+  }
+
+  .review-ul li {
+    margin-bottom: 50px;
+  }
+
+  .review_container h2 {
+    margin-bottom: 91px;
+  }
+  .review-ul li:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 991px) {
+  .review-ul li:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+  .review-ul {
+    gap: 28px;
+  }
+}
+
+/* -------------------------------END SEVENTH SECTION------------------------- */
