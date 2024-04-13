@@ -834,7 +834,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 22px;
-  align-items: center;
   justify-content: center;
 }
 
@@ -901,7 +900,6 @@ nav {
 
   .products-ul li {
     flex-basis: calc((100% - 20px) / 2);
-    max-width: 335px;
   }
   .products-h {
     font-size: 16px;
