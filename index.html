@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="container page-header">
         <div class="logotype">
           <a href="index.html">
@@ -40,7 +40,11 @@
                 >How it’s made?</a
               >
             </li>
-            <li class="nav-li"><a href="">Chocolate is loved</a></li>
+            <li class="nav-li">
+              <a href="#chocolate" onclick="scrollToSection(event,'#chocolate')"
+                >Chocolate is loved</a
+              >
+            </li>
           </ul>
           <div class="soc-icons">
             <svg width="20" height="20">
@@ -85,7 +89,10 @@
               </div>
               <div class="btn-scroll-tab">
                 <p>scroll down</p>
-                <button class="scroll-down">
+                <button
+                  onclick="scrollToSection(event,'#taste')"
+                  class="scroll-down"
+                >
                   <svg width="16" height="16">
                     <use href="./images/icon.svg#icon-arrow"></use>
                   </svg>
@@ -94,11 +101,14 @@
             </div>
             <div class="btn-scroll">
               <p>scroll down</p>
-              <a class="scroll-down">
+              <button
+                onclick="scrollToSection(event,'#taste')"
+                class="scroll-down"
+              >
                 <svg width="16" height="16">
                   <use href="./images/icon.svg#icon-arrow"></use>
                 </svg>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -151,7 +161,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="taste">
         <div class="container taste_container">
           <h2>
             IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
@@ -337,7 +347,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="products">
         <div class="container products_container">
           <h2>our <span>products</span></h2>
           <ul class="products-ul">
@@ -432,7 +442,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="sellers">
         <div class="container sellers_container">
           <h2>
             <span>top</span>
@@ -466,7 +476,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="chocolate">
         <div class="container review_container">
           <h2><span>chocolate </span> is loved</h2>
           <ul class="review-ul">
@@ -501,7 +511,92 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container footer">
+        <div class="up-content">
+          <h2 class="footer-h">
+            <span>Chocolate</span> a delicious cure for a bad day
+          </h2>
+          <ul class="ul-contacts">
+            <li>
+              <h3 class="footer-ul-h">Contact us</h3>
+              <p class="footer-ul-p">
+                <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+              </p>
+              <p class="footer-ul-p">
+                <a href="mail:simplychoc@gmail.com">simplychoc@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <h3 class="footer-ul-h">Social networks</h3>
+              <div class="soc-icons-footer">
+                <ul>
+                  <li>
+                    <a href=""
+                      ><svg width="20" height="20">
+                        <use href="./images/icon.svg#icon-instagram"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><svg width="20" height="20">
+                        <use href="./images/icon.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><svg width="20" height="20">
+                        <use href="./images/icon.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div class="down-content">
+          <ul class="footer-nav-ul">
+            <li>
+              <a href="#home" onclick="scrollToSection(event,'#home')">Home</a>
+            </li>
+            <li>
+              <a href="#made" onclick="scrollToSection(event,'#made')"
+                >How it’s made?</a
+              >
+            </li>
+            <li>
+              <a href="#products" onclick="scrollToSection(event,'#products')"
+                >Our products</a
+              >
+            </li>
+            <li>
+              <a href="#sellers" onclick="scrollToSection(event,'#sellers')"
+                >Top sellers</a
+              >
+            </li>
+            <li>
+              <a href="#chocolate" onclick="scrollToSection(event,'#chocolate')"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+          <form class="subscribe_form" name="subscribe_form">
+            <label for="email">
+              <input
+                class="input-footer"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </label>
+            <button class="submit-footer" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
