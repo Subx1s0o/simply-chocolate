@@ -187,8 +187,8 @@ nav {
     display: flex;
   }
 
-  .logotype a {
-    font-size: 16px;
+  .logotype-p {
+    font-size: 18px;
   }
 
   .container {
@@ -198,10 +198,6 @@ nav {
 }
 
 @media (min-width: 991px) {
-  .logotype a {
-    font-size: 18px;
-  }
-
   nav {
     gap: 90px;
   }
