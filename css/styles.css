@@ -111,6 +111,32 @@ span {
   justify-content: space-between;
 }
 
+.navbar_scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 35;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.199);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    top: -50px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
 nav {
   display: flex;
   gap: 48px;

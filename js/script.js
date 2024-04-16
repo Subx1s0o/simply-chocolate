@@ -1,7 +1,7 @@
-function scrollToSection(event, id) {
-  event.preventDefault();
-  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-}
+// function scrollToSection(event, id) {
+//   event.preventDefault();
+//   document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+// }
 
 (() => {
   const mobileMenu = document.querySelector(".burger-overlay ");
@@ -32,3 +32,34 @@ function scrollToSection(event, id) {
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+let navbar = document.querySelector(".page-header");
+let active_class = "navbar_scrolled";
+const container = document.querySelector(".hero__container");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth < 991) {
+    if (window.scrollY > 600) {
+      navbar.classList.add(active_class);
+      container.style.paddingTop = "100px"; // Добавляем паддинг к контейнеру
+    } else {
+      navbar.classList.remove(active_class);
+      container.style.paddingTop = "0"; // Убираем паддинг у контейнера
+    }
+  }
+});
+
+function scrollToSection(event, id) {
+  event.preventDefault();
+
+  const scrollTarget = document.querySelector(id);
+  const scrollPosition =
+    scrollTarget.getBoundingClientRect().top + window.scrollY;
+
+  const adjustedScrollPosition = scrollPosition - 80; // Пример значения пикселей
+
+  window.scrollTo({
+    top: adjustedScrollPosition,
+    behavior: "smooth",
+  });
+}
