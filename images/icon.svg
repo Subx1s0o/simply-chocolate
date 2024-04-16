@@ -35,5 +35,9 @@
 <symbol id='arrow' viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M0.856934 3.99996H11.1426M11.1426 3.99996L8.57122 1.42853M11.1426 3.99996L8.57122 6.57139" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
+<symbol id="close-burg" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.8332 8.16675L8.1665 19.8334M8.1665 8.16675L19.8332 19.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
 </defs>
 </svg>
